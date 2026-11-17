@@ -1,0 +1,86 @@
+{
+  "release_id": "published_benchmark",
+  "configuration": {
+    "RELEASE_ID": "published_benchmark",
+    "NETWORK_CACHE_SCHEMA": "nist_network",
+    "CANDIDATE_CACHE_SCHEMA": "nist_metfrag_candidates_2d",
+    "SEED_ALLOCATION_SCHEME": "component_stratified_10_percent",
+    "N_COMPOUNDS_TO_SAMPLE": null,
+    "MAX_SPECTRA_PER_COMPOUND": 1,
+    "RANDOM_SEED": 2026,
+    "SEED_FRACTION": 0.1,
+    "N_SEED_REPEATS": 10,
+    "IONMODE_FILTER": "positive",
+    "ADDUCT_FILTER": "[M+H]+",
+    "SPECTRUM_TYPE_FILTER": "MS2",
+    "BENCHMARK_PROCESSING_BATCH": 1,
+    "MIN_PEAKS": 3,
+    "FRAGMENT_TOLERANCE": 0.01,
+    "MIN_COSINE": 0.6,
+    "MIN_MATCHED_PEAKS": 2,
+    "TOPK": 10,
+    "PPM": 10,
+    "TOP_N_CANDIDATES_PER_NODE": 50,
+    "FINGERPRINT_METHOD_FOR_CHEMWALKER": "MFP2-bits",
+    "CHEMWALKER_PARALLEL": true,
+    "CHEMWALKER_NCORES": 4,
+    "CHEMWALKER_HEARTBEAT_SECONDS": 30,
+    "CHEMWALKER_COMPONENT_TIMEOUT_SECONDS": 21600,
+    "CHEMWALKER_EXECUTION_MODE": "official_parallel_subprocess",
+    "CHEMWALKER_SIGMOID_A": -9.0,
+    "CHEMWALKER_SIGMOID_B": 0.6,
+    "RESTART_PROB": 0.1,
+    "MNAP_BETA": 0.5,
+    "MNAP_SCORE_EPS": 0.05,
+    "MNAP_EDGE_MODE": "sigmoid"
+  },
+  "network_signature": "c50b5657fa731f1d81b7fcf326e92f84c9c86e4db72e0476f8e9ad171327d699",
+  "candidate_signature": "eddb3144f0975c925576afce57e653495b0bf81fa3df1ab74514eadd44d14345",
+  "ranking_signature": "32e5a4915521e7c39fa50feb9a5e6fcd86f2a8483592a732f4040150438a723a",
+  "input_msp": {
+    "path": "E:\\plastic-additives\\2_Benchmark_evaluation\\data\\nist.msp",
+    "exists": true,
+    "size": 883724,
+    "mtime_ns": 1785308100000000000
+  },
+  "benchmark_table": {
+    "path": "E:\\plastic-additives\\2_Benchmark_evaluation\\data\\pcbi.1006089.s007.tsv",
+    "exists": true,
+    "size": 2165718,
+    "mtime_ns": 1775829650000000000
+  },
+  "pubchemlite": {
+    "path": "E:\\plastic-additives\\2_Benchmark_evaluation\\data\\PubChemLite.csv",
+    "exists": true,
+    "size": 310708576,
+    "mtime_ns": 1781886274000000000
+  },
+  "metfrag_jar": {
+    "path": "E:\\plastic-additives\\2_Benchmark_evaluation\\software\\MetFrag-CL.jar",
+    "exists": true,
+    "size": 34448208,
+    "mtime_ns": 1775829650000000000
+  },
+  "chemwalker_cand_pair": {
+    "module": "chemwalker.rwalker",
+    "qualname": "cand_pair",
+    "signature": "(snet, tlid, method, parallel=True, meansc=True, ncors=0)",
+    "source_file": "D:\\ProgramData\\miniforge3\\envs\\mnap\\Lib\\site-packages\\chemwalker\\rwalker.py",
+    "source_file_sha256": "2bccbd2ae1dc9ab76300c7eeccc3652f62bab775013d70e7f317578cfe1479a3",
+    "callable_source_sha256": "b8219fba6bfec5b484265bb4216710b21b91c7f88a46de97297253765f92154d"
+  },
+  "chemwalker_random_walk": {
+    "module": "chemwalker.rwalker",
+    "qualname": "random_walk",
+    "signature": "(graph, seed, restart_prob=0.8, step=0, epsilon=1e-06, niter=10000, sparce_matrix=True)",
+    "source_file": "D:\\ProgramData\\miniforge3\\envs\\mnap\\Lib\\site-packages\\chemwalker\\rwalker.py",
+    "source_file_sha256": "2bccbd2ae1dc9ab76300c7eeccc3652f62bab775013d70e7f317578cfe1479a3",
+    "callable_source_sha256": "7a335f67159da86b87c6003d01bd6ac4c4d61e3ab4812803909bd53c4ae25843"
+  },
+  "chemwalker_worker": {
+    "path": "E:\\plastic-additives\\2_Benchmark_evaluation\\chemwalker_official_worker.py",
+    "exists": true,
+    "size": 8728,
+    "mtime_ns": 1786091628000000000
+  }
+}

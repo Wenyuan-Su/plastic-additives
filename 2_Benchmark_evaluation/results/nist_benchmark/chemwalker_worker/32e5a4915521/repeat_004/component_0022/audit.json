@@ -1,0 +1,34 @@
+{
+  "worker_id": "official_chemwalker_subprocess",
+  "cand_pair": {
+    "module": "chemwalker.rwalker",
+    "qualname": "cand_pair",
+    "signature": "(snet, tlid, method, parallel=True, meansc=True, ncors=0)",
+    "source_file": "D:\\ProgramData\\miniforge3\\envs\\mnap\\Lib\\site-packages\\chemwalker\\rwalker.py",
+    "source_file_sha256": "2bccbd2ae1dc9ab76300c7eeccc3652f62bab775013d70e7f317578cfe1479a3",
+    "callable_source_sha256": "b8219fba6bfec5b484265bb4216710b21b91c7f88a46de97297253765f92154d"
+  },
+  "random_walk": {
+    "module": "chemwalker.rwalker",
+    "qualname": "random_walk",
+    "signature": "(graph, seed, restart_prob=0.8, step=0, epsilon=1e-06, niter=10000, sparce_matrix=True)",
+    "source_file": "D:\\ProgramData\\miniforge3\\envs\\mnap\\Lib\\site-packages\\chemwalker\\rwalker.py",
+    "source_file_sha256": "2bccbd2ae1dc9ab76300c7eeccc3652f62bab775013d70e7f317578cfe1479a3",
+    "callable_source_sha256": "7a335f67159da86b87c6003d01bd6ac4c4d61e3ab4812803909bd53c4ae25843"
+  },
+  "fingerprint_method": "MFP2-bits",
+  "ncores": 4,
+  "restart_probability": 0.1,
+  "n_spectral_edges": 3,
+  "n_tlid_rows": 49,
+  "estimated_candidate_pairs": 428,
+  "n_candidate_edges": 428,
+  "n_candidate_graph_nodes": 49,
+  "n_valid_seed_uids": 1,
+  "n_missing_seed_uids": 0,
+  "missing_seed_uids": [],
+  "cand_pair_seconds": 3.5815718173980713,
+  "random_walk_seconds": 0.003000497817993164,
+  "total_seconds": 5.184394121170044,
+  "parent_observed_elapsed_seconds": 8.007315874099731
+}

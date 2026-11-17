@@ -1,0 +1,11 @@
+repeat_id,component_id,target_node,target_name,true_inchikey1,n_component_nodes,n_component_seeds,n_component_edges,n_target_candidates,true_candidate_found,MetFrag_rank,ChemWalker_rank,mNAP_rank,ChemWalker_reachable,mNAP_reachable,ChemWalker_fingerprint,ChemWalker_execution,ChemWalker_candidate_edges,ChemWalker_estimated_candidate_pairs,ChemWalker_seconds
+7,6,218,Lauroyl-L-carnitine,FUJLYHJROOYKRA,12,2,48,5,False,,,,False,False,MFP2-bits,official_parallel_subprocess,16948,16948,15.640174388885498
+7,6,219,Palmitoylcarnitine,XOMRRQXKHMYMOC,12,2,48,0,False,,,,False,False,MFP2-bits,official_parallel_subprocess,16948,16948,15.640174388885498
+7,6,339,Octanoylcarnitine,CXTATJFJDMJMIY,12,2,48,12,False,,,,False,False,MFP2-bits,official_parallel_subprocess,16948,16948,15.640174388885498
+7,6,348,Decanoyl-L-carnitine,LZOSYCMHQXPBFU,12,2,48,6,False,,,,False,False,MFP2-bits,official_parallel_subprocess,16948,16948,15.640174388885498
+7,6,349,Myristoyl-L-carnitine,PSHXNVGSVNEJBD,12,2,48,7,False,,,,False,False,MFP2-bits,official_parallel_subprocess,16948,16948,15.640174388885498
+7,6,449,(R)-Butyrylcarnitine,QWYFHHGCZUCMBN,12,2,48,50,False,,,,False,False,MFP2-bits,official_parallel_subprocess,16948,16948,15.640174388885498
+7,6,450,Hexanoyl-L-carnitine,VVPRQWTYSNDTEA,12,2,48,24,False,,,,False,False,MFP2-bits,official_parallel_subprocess,16948,16948,15.640174388885498
+7,6,451,Isovaleryl-L-carnitine,IGQBPDJNUXPEMT,12,2,48,50,False,,,,False,False,MFP2-bits,official_parallel_subprocess,16948,16948,15.640174388885498
+7,6,452,Isobutyryl-L-carnitine,LRCNOZRCYBNMEP,12,2,48,50,False,,,,False,False,MFP2-bits,official_parallel_subprocess,16948,16948,15.640174388885498
+7,6,453,Stearoyl-L-carnitine,FNPHNLNTJNMAEE,12,2,48,1,False,,,,False,False,MFP2-bits,official_parallel_subprocess,16948,16948,15.640174388885498

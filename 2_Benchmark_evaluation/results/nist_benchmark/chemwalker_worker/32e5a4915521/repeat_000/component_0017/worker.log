@@ -1,0 +1,39 @@
+Worker identifier: official_chemwalker_subprocess
+Python: D:\ProgramData\miniforge3\envs\mnap\python.exe
+ChemWalker source: D:\ProgramData\miniforge3\envs\mnap\Lib\site-packages\chemwalker\rwalker.py
+Calling original chemwalker.rwalker.cand_pair with parallel=True, ncors=4, fingerprint=MFP2-bits
+Spectral edges=5; tlid rows=7; seed structures=1; estimated candidate pairs=16
+[10:17:12] DEPRECATION WARNING: please use MorganGenerator
+[10:17:12] DEPRECATION WARNING: please use MorganGenerator
+[10:17:12] DEPRECATION WARNING: please use MorganGenerator
+[10:17:12] DEPRECATION WARNING: please use MorganGenerator
+[10:17:12] DEPRECATION WARNING: please use MorganGenerator
+[10:17:12] DEPRECATION WARNING: please use MorganGenerator[10:17:12] DEPRECATION WARNING: please use MorganGenerator
+
+[10:17:12] DEPRECATION WARNING: please use MorganGenerator
+[10:17:12] DEPRECATION WARNING: please use MorganGenerator
+[10:17:12] DEPRECATION WARNING: please use MorganGenerator
+[10:17:12] DEPRECATION WARNING: please use MorganGenerator
+[10:17:12] DEPRECATION WARNING: please use MorganGenerator
+[10:17:12] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+[10:17:13] DEPRECATION WARNING: please use MorganGenerator
+Original cand_pair completed: candidate edges=16; elapsed=3.1 s
+Worker output saved: E:\plastic-additives\2_Benchmark_evaluation\results\nist_benchmark\chemwalker_worker\32e5a4915521\repeat_000\component_0017\output.pkl

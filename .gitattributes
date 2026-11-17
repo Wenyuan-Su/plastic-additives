@@ -1,0 +1,14 @@
+2_Benchmark_evaluation/data/PubChemLite.csv filter=lfs diff=lfs merge=lfs -text
+2_Benchmark_evaluation/results/nist_benchmark/chemwalker_worker/06835609f364/repeat_000/component_0001/worker.log filter=lfs diff=lfs merge=lfs -text
+2_Benchmark_evaluation/results/nist_benchmark/chemwalker_worker/32e5a4915521/repeat_000/component_0001/worker.log filter=lfs diff=lfs merge=lfs -text
+2_Benchmark_evaluation/results/nist_benchmark/chemwalker_worker/32e5a4915521/repeat_001/component_0001/worker.log filter=lfs diff=lfs merge=lfs -text
+2_Benchmark_evaluation/results/nist_benchmark/chemwalker_worker/32e5a4915521/repeat_002/component_0001/worker.log filter=lfs diff=lfs merge=lfs -text
+2_Benchmark_evaluation/results/nist_benchmark/chemwalker_worker/32e5a4915521/repeat_003/component_0001/worker.log filter=lfs diff=lfs merge=lfs -text
+2_Benchmark_evaluation/results/nist_benchmark/chemwalker_worker/32e5a4915521/repeat_004/component_0001/worker.log filter=lfs diff=lfs merge=lfs -text
+2_Benchmark_evaluation/results/nist_benchmark/chemwalker_worker/32e5a4915521/repeat_005/component_0001/worker.log filter=lfs diff=lfs merge=lfs -text
+2_Benchmark_evaluation/results/nist_benchmark/chemwalker_worker/32e5a4915521/repeat_006/component_0001/worker.log filter=lfs diff=lfs merge=lfs -text
+2_Benchmark_evaluation/results/nist_benchmark/chemwalker_worker/32e5a4915521/repeat_007/component_0001/worker.log filter=lfs diff=lfs merge=lfs -text
+2_Benchmark_evaluation/results/nist_benchmark/chemwalker_worker/32e5a4915521/repeat_008/component_0001/worker.log filter=lfs diff=lfs merge=lfs -text
+2_Benchmark_evaluation/results/nist_benchmark/chemwalker_worker/32e5a4915521/repeat_009/component_0001/worker.log filter=lfs diff=lfs merge=lfs -text
+3_mnap_application/data/PubChemLite.csv filter=lfs diff=lfs merge=lfs -text
+3_mnap_application/data/spectra.mgf filter=lfs diff=lfs merge=lfs -text
