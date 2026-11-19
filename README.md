@@ -118,7 +118,7 @@ The three methods are evaluated using the **same target spectra, seed assignment
 - **`run_benchmark.ipynb`** – stepwise Jupyter interface for benchmark execution.
 - **`chemwalker_official_worker.py`** – subprocess wrapper for running the original ChemWalker `cand_pair` and `random_walk` functions safely under Windows/Jupyter.
 
-Installing the ChemWalker package does not replace `chemwalker_official_worker.py`. Keep the worker beside `benchmark_nist.py`. During the benchmark, the main script automatically starts this worker using the Python interpreter of the active environment, passes the network, candidates, seeds, and parameters through an input file, and reads back the results. The worker calls the installed ChemWalker functions in a separate process to provide a safe multiprocessing entry point on Windows. It does not need to be started manually and is not called by the mNAP application notebook.
+Installing the ChemWalker package does not replace `chemwalker_official_worker.py`. Keep the worker beside `benchmark_nist.py`. During the benchmark, the main script automatically starts this worker using the Python interpreter of the active environment, passes the network, candidates, seeds, and parameters through an input file, and reads back the results. The worker calls the installed ChemWalker functions in a separate process to provide a safe multiprocessing entry point on Windows. 
 
 ```text
 run_benchmark.ipynb
