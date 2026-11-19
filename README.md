@@ -151,11 +151,7 @@ The molecular network is constructed using modified cosine similarity with:
 - at least **2 matched product ions**; and
 - mutual Top-K filtering.
 
-Approximately **10% of nodes in each connected component** are assigned as seeds, with repeated seed allocations used to evaluate robustness. This controlled three-method benchmark still requires seeds because the original ChemWalker comparator is seed-based. The default seed allocation and benchmark reports are unchanged; setting `SEED_FRACTION = 0` is not a supported shortcut for a seed-free three-method comparison.
-
-For direct seed-free mNAP scoring with already prepared candidates, `compute_mnap_for_component(spectral_edges, full_tlid)` also supports candidate tables with `is_seed = False` for every row. Use the existing candidate schema (`node_id`, `uid`, `Identifier`, `InChI`, `Score`, `score_norm`, and `is_seed`) and spectral-edge schema (`node1`, `node2`, and `cosine`). This returns mNAP scores and ranks without running ChemWalker or changing the controlled benchmark.
-
-For the controlled benchmark, MetFrag candidate lists are standardized to enable consistent comparison among methods.
+Approximately **10% of nodes in each connected component** are assigned as seeds, with repeated seed allocations used to evaluate robustness. This controlled three-method benchmark still requires seeds because the original ChemWalker comparator is seed-based. 
 
 ### ▶️ Recommended execution
 
@@ -214,9 +210,9 @@ MetFrag-CL.jar
 
 The network files and PubChemLite database are read from `DATA_DIR`. The MetFrag JAR can be stored separately; set `METFRAG_PATH` to its actual location. The notebook reads locally downloaded GNPS files and does not download them automatically.
 
-Verified structures supplied in `seed_nodes.csv` are used as **seed nodes**, whereas the remaining nodes in the selected molecular-network component are treated as unknown features. Seed structures are optional: set `SEED_PATH = None` in the input-path cell to run without any seed file. An empty seed table or a selected component with no seed annotations is also supported. A configured but missing seed file still raises a file error, so that seed annotations are not silently ignored.
+Verified structures supplied in `seed_nodes.csv` are used as **seed nodes**, whereas the remaining nodes in the selected molecular-network component are treated as unknown features. Seed structures are optional: set `SEED_PATH = None` in the input-path cell to run without any seed file. An empty seed table or a selected component with no seed annotations is also supported. 
 
-When no verified seeds are present in the selected component, every spectrum retains its MetFrag candidate list. Each spectrum receives equal total restart probability, distributed among its candidates according to their normalized MetFrag scores (with a minimum score of `score_eps = 0.05`). A random walk with restart then propagates support over the existing weighted candidate graph. Candidate scores can therefore change when neighboring spectra have structurally compatible candidates supported by their MetFrag scores. Spectra with no usable candidate connections retain their original MetFrag ordering.
+When no verified seeds are present in the selected component, every spectrum retains its MetFrag candidate list. Each spectrum receives equal total restart probability, distributed among its candidates according to their normalized MetFrag scores. A random walk with restart then propagates support over the existing weighted candidate graph. Candidate scores can therefore change when neighboring spectra have structurally compatible candidates supported by their MetFrag scores. Spectra with no usable candidate connections retain their original MetFrag ordering.
 
 When verified seeds are available, each seed retains its confirmed structure and the existing seed-based random-walk implementation is used. This update does not change the original seeded propagation weights, candidate filtering, or ranking normalization. The default restart probability remains 0.5 for the application notebook and 0.1 for the controlled benchmark; it has not been retuned.
 
@@ -272,8 +268,6 @@ mNAP integrates:
 - structural information propagated from verified seed nodes, when available.
 
 Structural similarity is calculated using the **Tanimoto coefficient** based on RDKit molecular fingerprints.
-
-Unlike the controlled benchmark, the experimental application retains **all valid MetFrag candidates** without applying a Top-50 cutoff.
 
 ### 📤 Outputs
 
